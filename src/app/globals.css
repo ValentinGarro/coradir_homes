@@ -1,5 +1,34 @@
 @import "tailwindcss";
+/* En globals.css */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/public/fonts/PlayfairDisplay-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Raleway';
+    src: url('/public/fonts/Raleway-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+   
 
-@theme {  
+@theme { 
+    --font-playfair: 'Playfair Display', serif;
+    --font-raleway: 'Raleway', sans-serif; 
+    --color-gray:#4d4d4f;
+    --color-blue: #1a3455;
+    --color-blue-gray: #475c77
+    --color-blue-light: #3eb3e4;
+    --color-black: #343333;
+}
+  /* Repite para cada variante o fuente */
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
 }
  
