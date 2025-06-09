@@ -4,16 +4,16 @@ import HoverLink from "./components/hover-link";
 
 export default function Header() {
     const links = [
-        { href: "/", label: <>Proyectos de <br/> inversión </> , hover: [
+        { href: "#", label: <>Proyectos de <br/> inversión </> , hover: [
             { href: "/inversiones-inteligentes", label: "Inversiones Inteligentes" },
             { href: "/instituciones", label: "Instituciones" },
             { href: "/terrenos", label: "Terrenos" }, 
         ] },
-        { href: "/", label: "Alquileres" , hover: [
-            { href: "/", label: "Casa joven" },
+        { href: "#", label: "Alquileres" , hover: [
+            { href: "/casa-joven", label: "Casa joven" },
             { href: "/", label: "Corporativos" }, 
         ]},
-        { href: "/", label: "Beneficios" , hover:null},
+        { href: "/beneficios", label: "Beneficios" , hover:null},
         { href: "/", label: <>Sobre <br/> nosotros</> , hover:null},
     ];
     return (

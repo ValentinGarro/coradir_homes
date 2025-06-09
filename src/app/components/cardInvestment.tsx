@@ -10,9 +10,9 @@ export default function CardInvestment({img,title,description}: {img:string,titl
                 height={1000}
                 className="w-36 h-36 object-cover"
             />
-            <div className="flex flex-col justify-center items-start w-full gap-3">
-                <h2 className="text-blue font-playfair text-4xl font-bold">{title}</h2>
-                <p className="text-black font-raleway text-2xl">{description}</p>
+            <div className="flex flex-col justify-center items-start w-full">
+                <h2 className="text-blue font-playfair xl:text-4xl font-bold">{title}</h2>
+                <p className="text-black font-raleway xl:text-2xl">{description}</p>
             </div>
         </div>
     )

@@ -38,21 +38,21 @@ export default function Page(){
                 />
             </section>
             <section className="flex flex-col justify-start items-center container p-16 bg-white">
-                <h2 className="text-blue font-playfair text-7xl font-bold">¿Tenés un terreno?</h2>
-                <h2 className="text-black font-raleway text-7xl uppercase">Convertilo en ingresos</h2>
-                <p className="text-black font-raleway text-4xl text-center my-10">
+                <h2 className="text-blue font-playfair xl:text-7xl font-bold">¿Tenés un terreno?</h2>
+                <h2 className="text-black font-raleway xl:text-7xl uppercase">Convertilo en ingresos</h2>
+                <p className="text-black font-raleway xl:text-4xl text-center my-10">
                     Sumate a nuestro sistema aportando tu terreno<br/>
                     y recibis propiedades listas para alquilar.<br/>
                     Fácil, rentable y sin necesidad de invertir capital.  
                 </p> 
             </section>  
-            <section className="flex flex-col items-center justify-center container relative overflow-hidden px-56 py-10 gap-4">
+            <section className="flex flex-col items-center justify-center container relative px-56 py-10 pt-0 gap-4 xl:pb-26">
                 {
                     characteristic.map((characteristic,index) => (
                         <CardChar 
                             key={`characteristic-${index}`} 
                             {...characteristic}  
-                            className={index % 2 !== 0 ? 
+                            className={index % 2 === 0 ? 
                                 "bg-blue-gray rounded-full rounded-tr-none" : 
                                 "bg-blue rounded-full rounded-tl-none"  } 
                         />
