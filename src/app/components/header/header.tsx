@@ -1,16 +1,26 @@
 import Image from "next/image";
+import Link from "next/link";
+import HoverLink from "./components/hover-link";
 
 export default function Header() {
     const links = [
-        { href: "/", label: "Proyectos de inversión" },
-        { href: "/", label: "Alquileres" },
-        { href: "/", label: "Beneficios" },
-        { href: "/", label: "Sobre nosotros" },
+        { href: "/", label: <>Proyectos de <br/> inversión </> , hover: [
+            { href: "/", label: "Inversiones Inteligentes" },
+            { href: "/", label: "Instituciones" },
+            { href: "/", label: "Terrenos" }, 
+        ] },
+        { href: "/", label: "Alquileres" , hover: [
+            { href: "/", label: "Casa joven" },
+            { href: "/", label: "Corporativos" }, 
+        ]},
+        { href: "/", label: "Beneficios" , hover:null},
+        { href: "/", label: <>Sobre <br/> nosotros</> , hover:null},
     ];
     return (
-        <header className="flex justify-start items-center sticky top-0 z-50 bg-white  xl:max-h-40 container"> 
+        <header className="flex justify-start items-center sticky top-0 z-50 bg-white  xl:max-h-[30vh] container"> 
             <Image 
-                loading="lazy"
+                priority={true}
+                loading="eager"
                 src="/img/marca.png" 
                 alt="Logo Coradir Homes" 
                 aria-label="Logo Coradir Homes"
@@ -21,11 +31,16 @@ export default function Header() {
             <div className="w-full flex justify-end">
                 <div className="flex items-center justify-evenly gap-10 px-5">  
                     {links.map((link,index) => ( 
-                        <a 
-                            href={link.href} 
-                            key={`navlink-${index}`}
-                            className="text-center text-gray font-raleway uppercase xl:text-lg font-bold xl:max-w-40"
-                        >{link.label}</a> 
+                        <div className="flex items-center justify-center relative py-4 p-9 xl:max-w-64 group" key={`navlink-${index}`}>
+                            <Link
+                                href={link.href} 
+                                key={`navlink-${index}`}
+                                className="relative text-center text-gray font-raleway uppercase xl:text-lg font-bold z-2"
+                            >{link.label}</Link> 
+                            {link.hover && (
+                                <HoverLink links={link.hover} key={`hoverlink-${index}`}/>
+                            )}
+                        </div>
                     ))} 
                 </div>
             </div>
