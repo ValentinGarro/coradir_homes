@@ -1,11 +1,12 @@
-import Footer from "./components/footer/footer";
-import Header from "./components/header/header";
-
-export default function Home() {
+import Home from "./components/home/home";
+import SectionCreateHomes from "./components/home/components/sectionCreateHomes"; 
+import SectionProjectsDone from "./components/home/components/sectionProjectsDone";
+export default function Page() {
   return ( 
-    <>
-      <Header/> 
-      <Footer/>
+    <> 
+      <Home/>
+      <SectionCreateHomes/>
+      <SectionProjectsDone/>
     </>
   );
 }

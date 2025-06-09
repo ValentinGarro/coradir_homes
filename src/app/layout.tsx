@@ -1,6 +1,8 @@
 import type { Metadata } from "next"; 
 import "./globals.css";
- 
+import Header from "./components/header/header"; 
+import Footer from "./components/footer/footer";
+import Bot from "./components/home/components/bot";
 
 export const metadata: Metadata = {
   title: "Coradir Homes",
@@ -14,8 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className="bg-gray">
+      <body className="bg-white">
+        <Header/>   
+        <Bot/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

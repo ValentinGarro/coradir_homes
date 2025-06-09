@@ -17,7 +17,7 @@ export default function Header() {
         { href: "/", label: <>Sobre <br/> nosotros</> , hover:null},
     ];
     return (
-        <header className="flex justify-start items-center sticky top-0 z-50 bg-white  xl:max-h-[30vh] container"> 
+        <header className="flex justify-start items-center   bg-white  xl:max-h-[30vh] container"> 
             <Image 
                 priority={true}
                 loading="eager"
