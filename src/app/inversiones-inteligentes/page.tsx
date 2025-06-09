@@ -1,7 +1,10 @@
 import Image from "next/image";
-import CardInvestment from "./components/cardInvestment";
+import CardInvestment from "../components/cardInvestment";
 import Link from "next/link";
-
+export const metadata = {
+    title: "Inversiones Inteligentes",
+    description: "Invertí de manera inteligente y obtené retornos rápidos y seguros.",
+}
 export default function Investments(){
     const investments = [
         {
