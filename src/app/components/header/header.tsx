@@ -7,7 +7,7 @@ export default function Header() {
         { href: "/", label: <>Proyectos de <br/> inversión </> , hover: [
             { href: "/inversiones-inteligentes", label: "Inversiones Inteligentes" },
             { href: "/instituciones", label: "Instituciones" },
-            { href: "/", label: "Terrenos" }, 
+            { href: "/terrenos", label: "Terrenos" }, 
         ] },
         { href: "/", label: "Alquileres" , hover: [
             { href: "/", label: "Casa joven" },

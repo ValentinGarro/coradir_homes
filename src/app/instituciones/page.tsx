@@ -69,7 +69,7 @@ export default function Instituciones() {
                 }
                 <div
                     aria-hidden="true"
-                    className="absolute right-0 -bottom-20 w-full h-full pointer-events-none z-0"
+                    className="absolute right-0 -bottom-48 w-full h-full pointer-events-none z-0"
                     style={{
                         backgroundImage: "url('/img/logo-tipografia-blanca.png')",
                         backgroundRepeat: "no-repeat",
