@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-
+export const metadata = {
+    title: "Corporativos",
+    description: "Corporativos",
+}
 export default function Page(){
     const benefits = [
         <>Trámite ágil y <b>garantía empresarial.</b></>,
