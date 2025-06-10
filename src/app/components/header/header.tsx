@@ -11,7 +11,7 @@ export default function Header() {
         ] },
         { href: "#", label: "Alquileres" , hover: [
             { href: "/casa-joven", label: "Casa joven" },
-            { href: "/", label: "Corporativos" }, 
+            { href: "/corporativos", label: "Corporativos" }, 
         ]},
         { href: "/beneficios", label: "Beneficios" , hover:null},
         { href: "/", label: <>Sobre <br/> nosotros</> , hover:null},
