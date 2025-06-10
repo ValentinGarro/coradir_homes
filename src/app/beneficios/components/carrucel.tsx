@@ -44,7 +44,7 @@ export default function Carrucel(){
                                         alt="Slider"
                                         width={2000}
                                         height={2000}
-                                        className="w-full h-full object-contain"
+                                        className="w-full h-full "
                                     />
                                 </div>
                         ))
@@ -55,7 +55,7 @@ export default function Carrucel(){
                             sliders.map((_,index) => (
                                 <button
                                     key={`slider-${index}`}
-                                    className="w-5 h-5 bg-white/70 rounded-full cursor-pointer"
+                                    className="w-3 h-3 bg-white/70 rounded-full cursor-pointer"
                                     onClick={() => setCurrentSlide(index)}
                                     style={{
                                         backgroundColor: index === currentSlide ? "white" : "rgba(255,255,255,0.7)"  ,

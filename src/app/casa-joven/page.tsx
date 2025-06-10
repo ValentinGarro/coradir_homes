@@ -10,7 +10,7 @@ export default function CasaJoven() {
     return (
         <>
             <section className="relative container flex flex-col items-center justify-start gap-5 min-h-[100vh]">
-                <h1 className="text-blue font-playfair xl:text-7xl font-bold">Casa Jóven</h1>
+                <h1 className="text-blue font-playfair xl:text-8xl font-bold mb-10">Casa Jóven</h1>
                 <div 
                 className={`flex flex-col items-center justify-center text-white py-4 px-16 text-center  gap-2 
                 bg-blue-gray rounded-full rounded-tr-none w-[50%] `}> 
@@ -25,7 +25,7 @@ export default function CasaJoven() {
                         className="w-72 h-72 absolute z-10 top-0 right-0 rounded-full"
                     /> 
                     
-                    <p className="text-center text-black font-raleway xl:text-2xl w-[50%]">
+                    <p className="text-center text-black font-raleway xl:text-3xl w-[50%]">
                         Tu nuevo comienzo empieza en Coradir Homes.
                         Viviendas modernas, seguras y accesibles,
                         pensadas para acompañarte en cada etapa de la
@@ -42,19 +42,19 @@ export default function CasaJoven() {
                         height={1000}
                         className="w-72 h-72 absolute z-10 bottom-0 left-0 transform  -translate-y-1/2   rounded-full"
                     />
-                    <p className="text-center text-black font-raleway xl:text-2xl w-[50%]">
+                    <p className="text-center text-black font-raleway xl:text-3xl w-[50%]">
                         <b>Confort total desde el primer día:</b><br/>
                         Sin preocuparte por mantenimiento ni estructura.
                     </p>
-                    <p className="text-center text-black font-raleway xl:text-2xl w-[50%]">
+                    <p className="text-center text-black font-raleway xl:text-3xl w-[50%]">
                         <b>Seguridad inteligente 24/7: </b><br/>
                         Vigilancia en tiempo real con IA para que descanses tranquila.
                     </p>
-                    <p className="text-center text-black font-raleway xl:text-2xl w-[50%]">
+                    <p className="text-center text-black font-raleway xl:text-3xl w-[50%]">
                         <b>Tecnología que simplifica tu vida:</b><br/>
                         Todo pensado para un estilo de vida cómodo y actual.
                     </p>
-                    <p className="text-center text-black font-raleway xl:text-2xl w-[50%]">
+                    <p className="text-center text-black font-raleway xl:text-3xl w-[50%]">
                         <b>Ubicación estratégica + precio accesible:</b><br/>
                         Calidad y conectividad sin sacrificar tu presupuesto.
                     </p>

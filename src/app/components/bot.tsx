@@ -1,5 +1,6 @@
 "use client"
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Bot() {
     return (
@@ -16,7 +17,15 @@ export default function Bot() {
                 }}
             /> 
             {/* Botón principal */}
-            <span className="relative z-10 bg-blue/95 transition-all ease-in-out duration-200 hover:bg-blue w-20 h-20 rounded-full border-2 border-white cursor-pointer" />
+            <span className="relative z-10 bg-blue/95 transition-all ease-in-out duration-200 hover:bg-blue w-20 h-20 rounded-full border-2 border-white cursor-pointer" >
+                <Image
+                    src="/img/chatbot.png"
+                    alt="Chatbot"
+                    width={100}
+                    height={100}
+                    className="w-full h-full rounded-full"
+                />
+            </span>
         </span>
     );
 }

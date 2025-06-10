@@ -11,7 +11,7 @@ export default function Page(){
             <section className="relative container bg-white flex flex-col items-center justify-start xl:py-16 xl:px-36 gap-5">
                 <h1 className="text-blue font-playfair xl:text-9xl font-bold text-left  w-[60%]">Beneficios</h1>
                 <h2 className="text-black font-raleway xl:text-6xl text-left w-[60%]">DE ELEGIR CORADIR PARA <br/> <b>TUS INVERSIONES.</b></h2>
-                <section className="flex flex-col items-center justify-center  w-[80%] gap-5 xl:text-5xl">
+                <section className="flex flex-col items-center justify-center  w-[80%] gap-14 xl:text-5xl">
                     <p className="font-raleway text-black w-full">Accedé al mercado inmobiliario con <b>proyectos modernos, seguros y de alta rentabilidad.</b></p>
                     <p className="font-raleway text-black w-full">
                         <b>Con infraestructura inteligente, eficiencia 
