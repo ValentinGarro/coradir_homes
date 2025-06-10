@@ -15,9 +15,9 @@ export default function SectionActives(){
                 aria-hidden="true"
                 className="absolute left-0 top-14 w-full h-full pointer-events-none z-0"
                 style={{
-                    backgroundImage: "url('/img/logo-tipografia-blanca.png')",
+                    backgroundImage: "url('/img/torre.png')",
                     backgroundRepeat: "no-repeat",
-                    backgroundPosition: "10% 300%", 
+                    backgroundPosition: "10% bottom", 
                     backgroundSize: "contain",
                     opacity: 0.3 
                 }}

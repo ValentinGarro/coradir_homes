@@ -8,32 +8,32 @@ export const metadata = {
 export default function Instituciones() {
     const characteristic = [
         {
-            img: "/icons/01.png",
+            img: "/icons/1_infraestructura_sin_inversión_inicial.png",
             title: "Infraestructura sin inversión inicial",
             description: `La universidad o escuela solo aporta el terreno, sin necesidad de destinar fondos propios,
                 el proyecto proporciona una mejora urbanistica del campus o predio institucional.
             `,
         },
         {
-            img: "/icons/01.png",
+            img: "/icons/2_accesibilidad.png",
             title: "Accesibilidad",
             description: `Costos de arrendamiento accesibles para alumnos, promobirnfo inclusión educativa.
             `,
         },
         {
-            img: "/icons/01.png",
+            img: "/icons/3_edificios_inteligentes.png",
             title: "Edificios inteligentes",
             description: `Uso de tecnologia avandaza para optimizar consumo energético, seguridad y comodidad.
             `,
         },
         {
-            img: "/icons/01.png",
+            img: "/icons/4_impacto_social_positivo.png",
             title: "Impacto social positivo",
             description: `Contribucíon al acceso de viviendas para estudiantes.
             `,
         },
         {
-            img: "/icons/01.png",
+            img: "/icons/5_modelo_seguro.png",
             title: "Modelo seguro",
             description: `Propiedad administrada por CORADIR, minimizando riesgos.
             `,
@@ -69,9 +69,9 @@ export default function Instituciones() {
                 }
                 <div
                     aria-hidden="true"
-                    className="absolute right-0 -bottom-48 w-full h-full pointer-events-none z-0"
+                    className="absolute -right-36 bottom-0 w-full h-full pointer-events-none z-0"
                     style={{
-                        backgroundImage: "url('/img/logo-tipografia-blanca.png')",
+                        backgroundImage: "url('/img/torre.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundPosition: "right", 
                         backgroundSize: "contain",

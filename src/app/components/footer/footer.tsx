@@ -13,7 +13,7 @@ export default function Footer(){
             </div>
             <Image 
                 loading="lazy"
-                src="/img/marca.png" 
+                src="/img/marca blanco.png" 
                 alt="Logo Coradir Homes" 
                 aria-label="Logo Coradir Homes"
                 width={1000} 

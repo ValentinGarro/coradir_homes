@@ -8,17 +8,17 @@ export const metadata = {
 export default function Investments(){
     const investments = [
         {
-            img: "/icons/01.png",
+            img: "/icons/1_alta_rentabilidad.png",
             title: "Alta rentabilidad",
             description: "Generá ingresos pasivos mes a mes con alquileres optimizados.",
         },
         {
-            img: "/icons/01.png",
+            img: "/icons/2_ubicación_estratégica.png",
             title: "Ubicación estratégica",
             description: "Propiedades en zonas de gran demanda, asegurando valorización.",
         },
         {
-            img: "/icons/01.png",
+            img: "/icons/3_administración_profesional.png",
             title: "Administración profesional",
             description: "Gestión eficiente sin preocupaciones.",
         },

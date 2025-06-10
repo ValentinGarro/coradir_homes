@@ -33,7 +33,7 @@ export default function Page(){
                     {benefits.map((benefit,index) => (
                         <div key={`benefit-${index}`} className="flex items-center justify-center gap-5 w-full">
                             <Image
-                                src="/icons/01.png"
+                                src="/icons/check.png"
                                 alt="Beneficios"
                                 width={100}
                                 height={100}

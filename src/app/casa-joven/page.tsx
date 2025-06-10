@@ -69,9 +69,9 @@ export default function CasaJoven() {
                 <section className="relative flex flex-col items-start justify-center gap-10 px-40 overflow-hidden py-20">
                     <div
                         aria-hidden="true"
-                        className="absolute -left-48 -bottom-28 w-full h-full pointer-events-none z-0"
+                        className="absolute -left-48 -bottom-0 w-full h-full pointer-events-none z-0"
                         style={{
-                            backgroundImage: "url('/img/logo-tipografia-blanca.png')",
+                            backgroundImage: "url('/img/torre.png')",
                             backgroundRepeat: "no-repeat",
                             backgroundPosition: "left", 
                             backgroundSize: "contain",
