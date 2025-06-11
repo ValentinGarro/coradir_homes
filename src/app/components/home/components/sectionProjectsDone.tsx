@@ -15,7 +15,7 @@ export default function SectionProjectsDone(){
 
     ]
     return(
-        <section className="bg-blue p-5 flex flex-col items-center justify-center  w-full gap-10 mb-10">
+        <section className="bg-blue p-5 flex flex-col items-center justify-center container w-full gap-10 !mb-10">
             <h2 className="xl:text-5xl  text-center font-playfair text-white font-bold">Proyectos realizados</h2>
             <section className="grid grid-cols-2 gap-2 w-full py-5 px-56"> 
                 {

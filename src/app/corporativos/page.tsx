@@ -44,7 +44,7 @@ export default function Page(){
                     ))}
                 </div>
             </section>
-            <section className="container relative w-full ">
+            <section className="relative w-full">
                 <Image
                     src="/img/coraporativos_final.jpg"
                     alt="Corporativos"

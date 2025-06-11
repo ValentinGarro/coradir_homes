@@ -24,21 +24,23 @@ export default function Investments(){
         },
     ]
     return(
-        <section className="flex flex-col items-center justify-center container py-10 pb-0 gap-5">
-            <h1 className="font-raleway text-black xl:text-8xl text-center px-16">
-                <b className="font-playfair text-blue">Inversiones</b> <br/>
-                Inteligentes
-            </h1>
-            <p className="font-raleway text-black xl:text-4xl text-center mb-20 w-[60%] px-16">
-                Invertí de manera inteligente y obtené retornos rápidos y seguros.
-            </p>
-            <div className="grid grid-cols-1 gap-2 w-[70%] mx-auto ">
-                {
-                    investments.map((investment,index) => (
-                        <CardInvestment key={`investment-${index}`} {...investment}/>
-                    ))
-                }
-            </div>
+        <>
+            <section className="flex flex-col items-center justify-center container py-10 pb-0 gap-5">
+                <h1 className="font-raleway text-black xl:text-8xl text-center px-16">
+                    <b className="font-playfair text-blue">Inversiones</b> <br/>
+                    Inteligentes
+                </h1>
+                <p className="font-raleway text-black xl:text-4xl text-center mb-20 w-[60%] px-16">
+                    Invertí de manera inteligente y obtené retornos rápidos y seguros.
+                </p>
+                <div className="grid grid-cols-1 gap-2 w-[70%] mx-auto ">
+                    {
+                        investments.map((investment,index) => (
+                            <CardInvestment key={`investment-${index}`} {...investment}/>
+                        ))
+                    }
+                </div>
+            </section>
             <section className="relative w-full ">
                 <Image
                     src="/img/inversiones_inteligentes.png"
@@ -51,6 +53,6 @@ export default function Investments(){
                     ¡Saber más!
                 </Link>
             </section>
-        </section>
+        </>
     )
 }

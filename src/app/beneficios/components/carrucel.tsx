@@ -29,7 +29,7 @@ export default function Carrucel(){
     return(
         <section className="w-[80%] h-[80vh] overflow-hidden relative bg-transparent my-10">
                     <div 
-                        className={`flex h-full absolute top-0 left-0 transition-transform duration-500`}
+                        className={`flex h-full absolute top-0 left-0 transition-transform duration-700`}
                         style={{
                             width: `${sliders.length * 100}%`,
                             transform: `translateX(-${currentSlide*20 }%)`,
@@ -64,6 +64,12 @@ export default function Carrucel(){
                             ))
                         }
                     </div>
+                    <span 
+                        onClick={() => setCurrentSlide((prev) => (prev - 1 + sliders.length) % sliders.length)}
+                        className="flex items-center justify-center absolute top-1/2 left-2 transform -translate-y-1/2 cursor-pointer z-10 xl:text-5xl text-white rounded-full pb-2 px-3 hover:bg-gray/80 transition-colors duration-300"> {"<"} </span>
+                    <span 
+                        onClick={() => setCurrentSlide((prev) => (prev + 1) % sliders.length)}
+                        className="flex items-center justify-center absolute top-1/2 right-2 transform -translate-y-1/2 cursor-pointer z-10 xl:text-5xl text-white rounded-full pb-2 px-3 hover:bg-gray/80 transition-colors duration-300"> {">"} </span>
                 </section>
     );
 }

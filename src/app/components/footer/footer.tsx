@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer(){
     return(
-        <footer className="flex justify-between items-center container xl:max-h-[25vh] bg-blue px-10 overflow-hidden">
+        <footer className="flex justify-between items-center xl:max-h-[25vh] bg-blue px-10 overflow-hidden">
             <div className="flex flex-col justify-start items-center gap-3">
                 <span className="text-white font-raleway xl:text-xl">¡Seguinos y conocé más!</span>
                 <ul className="list-none text-white flex justify-start flex-col gap-2 w-full">

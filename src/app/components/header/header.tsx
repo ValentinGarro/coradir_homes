@@ -1,6 +1,8 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import HoverLink from "./components/hover-link";
+import { useMediaQuery } from "../../../hooks/useMediaQuery";
 
 export default function Header() {
     const links = [
@@ -16,9 +18,10 @@ export default function Header() {
         { href: "/beneficios", label: "Beneficios" , hover:null},
         { href: "/", label: <>Sobre <br/> nosotros</> , hover:null},
     ];
+    const isMobile = useMediaQuery("(max-width: 768px)");
     return (
-        <header className="flex justify-start items-center  px-10 bg-white  xl:max-h-[30vh] container"> 
-            <Link href="/" className=" h-30 my-20 flex items-center justify-center overflow-hidden">
+        <header className="relative flex justify-start items-center  px-10 bg-white w-full xl:max-h-[30vh] container"> 
+            <Link href="/" className="xl:h-30 h-20 my-20 flex items-center justify-center overflow-hidden">
                 <Image 
                     priority={true}
                     loading="eager"
@@ -30,7 +33,7 @@ export default function Header() {
                 className="w-90 h-90"
                 />
             </Link>
-            <div className="w-full flex justify-end">
+            <div className="w-full hidden xl:flex justify-end">
                 <div className="flex items-center justify-evenly gap-10 px-5">  
                     {links.map((link,index) => ( 
                         <div className="flex items-center justify-center relative py-4 p-9 xl:max-w-64 group" key={`navlink-${index}`}>
@@ -46,6 +49,9 @@ export default function Header() {
                     ))} 
                 </div>
             </div>
+            {isMobile && (
+                <></>
+             )}   
         </header>
     );
 }

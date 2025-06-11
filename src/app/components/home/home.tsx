@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home(){
     return( 
-        <section className="flex flex-col justify-center items-center container p-16 relative xl:h-[80vh]"> 
+        <section className="flex flex-col justify-center items-center p-16 relative xl:h-[80vh]"> 
             <h1 
                 className="z-10 flex flex-col justify-center items-center font-playfair xl:text-6xl gap-4 text-white uppercase xl:mt-20 "
                 aria-label="Elegí tu nuevo hogar Y viví la vida que mereces."
