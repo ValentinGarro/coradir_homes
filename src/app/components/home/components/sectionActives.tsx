@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function SectionActives(){
     const links = [
-        { href: "/", label: "Inversiones Inteligentes" },
-        { href: "/", label: "Instituciones" },
-        { href: "/", label: "Terrenos" }, 
+        { href: "/inversiones-inteligentes", label: "Inversiones Inteligentes" },
+        { href: "/instituciones", label: "Instituciones" },
+        { href: "/terrenos", label: "Terrenos" }, 
     ]
     return(
         <section
@@ -31,8 +31,8 @@ export default function SectionActives(){
                             href={link.href}
                             key={`active-${index}`}
                             className="flex items-center justify-center text-center w-[50%] 
-                            border-2 border-blue  py-2 rounded-full
-                            text-gray font-raleway uppercase xl:text-xl bg-transparent z-10"
+                            border-2 border-blue py-2 rounded-full
+                            text-gray font-raleway uppercase xl:text-xl bg-transparent z-10 link-clip-hover overflow-hidden relative"
                         >
                             {link.label}
                         </Link>
