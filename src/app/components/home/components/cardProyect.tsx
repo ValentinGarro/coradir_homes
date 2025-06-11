@@ -12,7 +12,7 @@ export default function CardProyect({
 }) {
     return (
         <div 
-            className="relative flex flex-col items-center justify-center gap-3"
+            className="w-full relative flex flex-col items-center justify-center gap-3"
         >
             <Image 
                 loading="lazy"
@@ -21,7 +21,7 @@ export default function CardProyect({
                 aria-label={title}
                 width={1000}
                 height={1000}
-                className="w-80 h-80 object-cover"
+                className="w-full xl:w-80  h-80 xl:object-cover"
             />
             <h3 className="w-full text-center text-white font-raleway xl:text-2xl">
                 {title}

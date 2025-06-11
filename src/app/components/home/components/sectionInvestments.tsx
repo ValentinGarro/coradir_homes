@@ -2,13 +2,13 @@ import Link from "next/link";
 
 export default function SectionInvestments(){
     return(
-        <section className="xl:w-[80%] flex items-center justify-center gap-10">
-            <h2 className="font-playfair text-black xl:text-6xl">
+        <section className="w-full xl:w-[80%] flex flex-col xl:flex-row items-center justify-center gap-10">
+            <h2 className="font-playfair text-black text-4xl xl:text-6xl">
                 Tu oportunidad de <br/> 
-                <b className="text-blue font-bold font-playfair xl:text-9xl">Inversión</b>
+                <b className="text-blue font-bold font-playfair text-5xl xl:text-9xl">Inversión</b>
             </h2>
             <div className="w-full flex flex-col justify-center items-center gap-5  ">
-                <p className="xl:text-xl font-raleway text-black">
+                <p className="text-lg xl:text-xl font-raleway text-black">
                     <b>Invertí con seguridad,</b> incluso sin experiencia previa,
                     y sé parte activa del desarrollo inmobiliario.
                 </p>

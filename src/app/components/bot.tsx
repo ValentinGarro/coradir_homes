@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Bot() {
     return (
-        <span className="fixed bottom-1/2 left-10 z-50 w-20 h-20 flex items-center justify-center">
+        <span className="fixed  bottom-1/4  right-10 xl:left-10 z-50 w-20 h-20 flex items-center justify-center">
             {/* Auriolas animadas */}
             <motion.span
                 className="absolute w-20 h-20  rounded-full bg-blue/80"

@@ -21,7 +21,7 @@ export default function Header() {
     const isMobile = useMediaQuery("(max-width: 768px)");
     return (
         <header className="relative flex justify-start items-center  px-10 bg-white w-full xl:max-h-[30vh] container"> 
-            <Link href="/" className="xl:h-30 h-20 my-20 flex items-center justify-center overflow-hidden">
+            <Link href="/" className="xl:h-30 h-20 xl:my-20 my-5 flex items-center justify-center overflow-hidden">
                 <Image 
                     priority={true}
                     loading="eager"
