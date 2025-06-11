@@ -10,11 +10,11 @@ export default function CasaJoven() {
     return (
         <>
             <section className="relative container flex flex-col items-center justify-start gap-5 min-h-[100vh]">
-                <h1 className="text-blue font-playfair text-6xl xl:text-8xl font-bold mb-10">Casa Jóven</h1>
+                <h1 className="text-blue font-playfair text-6xl xl:text-8xl font-bold xl:mb-10 mb-5">Casa Jóven</h1>
                 <div 
                 className={`flex flex-col items-center justify-center text-white py-4 px-16 text-center  gap-2 
                 bg-blue-gray rounded-full rounded-tr-none w-[90%] xl:w-[50%] `}> 
-                    <p className=" font-raleway text-xlxl:text-3xl ">Acceder a tu primer departamento nunca fue tan fácil, rápido y accesible.</p> 
+                    <p className=" font-raleway text-lg xl:text-3xl ">Acceder a tu primer departamento nunca fue tan fácil, rápido y accesible.</p> 
                 </div> 
                 <section className="relative xl:px-16 px-4 w-full xl:pt-26 pt-16 flex items-center justify-center">
                     <Image
@@ -63,19 +63,19 @@ export default function CasaJoven() {
                         alt="Casa Joven"
                         width={1000}
                         height={1000}
-                        className="xl:w-96 xl:h-96 w-44 h-44 absolute z-10 -bottom-72 right-0  rounded-full"
+                        className="xl:w-96 xl:h-96 w-44 h-44 absolute z-10  xl:-bottom-72 -bottom-36 right-0  rounded-full"
                     />
                 </section>
-                <section className="relative flex flex-col items-start justify-center xl:gap-10 xl:px-40 px-5 pr-40 xl:pr-0 overflow-hidden py-20">
+                <section className="relative flex flex-col items-start xl:items-center justify-center xl:gap-10 xl:w-[80%] px-5 pr-44 xl:pr-0 overflow-hidden xl:py-20">
                     <div
                         aria-hidden="true"
-                        className="absolute -left-48 -bottom-0 w-full h-full pointer-events-none z-0"
+                        className="absolute xl:-left-32 -left-16 -bottom-0 w-full h-full pointer-events-none z-0"
                         style={{
                             backgroundImage: "url('/img/torre.png')",
                             backgroundRepeat: "no-repeat",
                             backgroundPosition: "left", 
                             backgroundSize: "contain",
-                            opacity: 0.3 
+                            
                         }}
                     />
                     <p className="text-black font-raleway text-xl xl:text-5xl font-bold xl:w-[70%]">

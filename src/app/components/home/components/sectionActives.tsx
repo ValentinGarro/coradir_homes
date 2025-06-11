@@ -18,8 +18,7 @@ export default function SectionActives(){
                     backgroundImage: "url('/img/torre.png')",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "10% bottom", 
-                    backgroundSize: "contain",
-                    opacity: 0.3 
+                    backgroundSize: "contain", 
                 }}
             />
 

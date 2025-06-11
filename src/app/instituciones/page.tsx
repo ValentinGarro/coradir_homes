@@ -75,8 +75,7 @@ export default function Instituciones() {
                         backgroundImage: "url('/img/torre.png')",
                         backgroundRepeat: "no-repeat",
                         backgroundPosition: "right", 
-                        backgroundSize: "contain",
-                        opacity: 0.3 
+                        backgroundSize: "contain", 
                     }}
                 />
             </section>
