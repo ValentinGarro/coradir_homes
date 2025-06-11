@@ -27,7 +27,7 @@ export default function Carrucel(){
         };
     }, [currentSlide, sliders.length]);
     return(
-        <section className="w-[80%] h-[80vh] overflow-hidden relative bg-transparent my-10">
+        <section className="w-[80%] xl:h-[80vh] h-[50vh] overflow-hidden relative bg-transparent my-10">
                     <div 
                         className={`flex h-full absolute top-0 left-0 transition-transform duration-700`}
                         style={{
