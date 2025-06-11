@@ -11,8 +11,8 @@ export default function CardInvestment({img,title,description}: {img:string,titl
                 className="xl:w-44 xl:h-44 w-24 h-24 object-cover"
             />
             <div className="flex flex-col justify-center items-start w-full">
-                <h2 className="text-blue font-playfair xl:text-4xl font-bold">{title}</h2>
-                <p className="text-black font-raleway xl:text-2xl">{description}</p>
+                <h2 className="text-blue font-playfair text-lg xl:text-4xl font-bold">{title}</h2>
+                <p className="text-black font-raleway text-sm xl:text-2xl">{description}</p>
             </div>
         </div>
     )
