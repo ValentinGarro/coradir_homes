@@ -18,9 +18,9 @@ export default function Page(){
     ]
     return(
         <>
-            <section className="flex flex-col justify-end items-center p-16 relative xl:h-[70vh]"> 
+            <section className="flex flex-col justify-end items-center p-16 relative h-[50vh] xl:h-[70vh]"> 
                 <h1 
-                    className="z-10 flex flex-col justify-center items-center font-playfair xl:text-8xl gap-4 text-white uppercase xl:mt-20 "
+                    className="z-10 flex flex-col justify-center items-center font-playfair text-6xl xl:text-8xl gap-4 text-white uppercase xl:mt-20 "
                     aria-label="Terrenos"
                     style={{ textShadow: '6px 3px 4px rgba(0,0,0,0.5)' }}
                 >
@@ -34,19 +34,19 @@ export default function Page(){
                     aria-label="Hero Pagina Principal"
                     width={2000} 
                     height={2000} 
-                    className="w-[100vw] xl:h-[70vh] absolute top-0 left-0 "
+                    className="w-[100vw] h-[50vh] xl:h-[70vh] absolute top-0 left-0 "
                 />
             </section>
-            <section className="flex flex-col justify-start items-center container p-16 bg-white">
-                <h2 className="text-blue font-playfair xl:text-7xl font-bold">¿Tenés un terreno?</h2>
-                <h2 className="text-black font-raleway xl:text-7xl uppercase">Convertilo en ingresos</h2>
-                <p className="text-black font-raleway xl:text-4xl text-center my-10">
+            <section className="flex flex-col justify-start items-center container p-10 xl:p-16 bg-white">
+                <h2 className="text-blue font-playfair text-3xl xl:text-7xl font-bold">¿Tenés un terreno?</h2>
+                <h2 className="text-black font-raleway text-2xl xl:text-7xl uppercase">Convertilo en ingresos</h2>
+                <p className="text-black font-raleway text-xl xl:text-4xl text-center my-10">
                     Sumate a nuestro sistema aportando tu terreno<br/>
                     y recibis propiedades listas para alquilar.<br/>
                     Fácil, rentable y sin necesidad de invertir capital.  
                 </p> 
             </section>  
-            <section className="flex flex-col items-center justify-center container relative px-56 py-10 pt-0 gap-4 xl:pb-26">
+            <section className="flex flex-col items-center justify-center xl:container relative xl:px-56 py-10 pt-0 gap-4 xl:pb-26">
                 {
                     characteristic.map((characteristic,index) => (
                         <CardChar 
