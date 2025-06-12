@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className="bg-white">
+      <body className="bg-white overflow-x-hidden">
         <Header/>   
         <Bot/>
         {children}

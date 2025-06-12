@@ -72,3 +72,21 @@
   position: relative;
   z-index: 1;
 }
+
+.slider-burger{
+  display: block;    
+  height: 4px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.menu-submenu-transition {
+  transition: max-height 0.3s ease-in-out, opacity 0.25s ease-out;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+}
+.menu-submenu-open {
+  max-height: 1000px;
+  opacity: 1;
+}
