@@ -34,7 +34,7 @@ export default function Page(){
                     aria-label="Hero Pagina Principal"
                     width={2000} 
                     height={2000} 
-                    className="w-[100vw] h-[50vh] xl:h-[70vh] absolute top-0 left-0 "
+                    className="w-[100vw] h-[50vh] xl:h-[70vh]  object-top absolute top-0 left-0 "
                 />
             </section>
             <section className="flex flex-col justify-start items-center container p-10 xl:p-16 bg-white">
@@ -46,7 +46,7 @@ export default function Page(){
                     Fácil, rentable y sin necesidad de invertir capital.  
                 </p> 
             </section>  
-            <section className="flex flex-col items-center justify-center xl:container relative xl:px-56 py-10 pt-0 gap-4 xl:pb-26">
+            <section className="flex flex-col items-center justify-center w-full max-w-[2000px] mx-auto xl:container relative xl:px-56 py-10 pt-0 gap-4 xl:pb-26">
                 {
                     characteristic.map((characteristic,index) => (
                         <CardChar 

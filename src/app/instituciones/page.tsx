@@ -41,7 +41,7 @@ export default function Instituciones() {
     ]
     return (
         <>
-            <section className="flex flex-col justify-center items-center p-16 relative h-[60vh] xl:h-[100vh]"> 
+            <section className="flex flex-col justify-center items-center p-16 relative h-[60vh] xl:h-[80vh]"> 
                 <h1 
                     className="z-10 flex flex-col justify-center items-center font-playfair text-5xl xl:text-8xl gap-4 text-white uppercase xl:mt-20 "
                     aria-label="Instituciones"
@@ -57,7 +57,7 @@ export default function Instituciones() {
                     aria-label="Hero Pagina Principal"
                     width={2000} 
                     height={2000} 
-                    className="w-[100vw] h-[60vh] xl:h-[100vh] absolute top-0 left-0 "
+                    className="w-[100vw] h-[60vh] xl:h-[80vh] object-top   absolute top-0 left-0 "
                 />
             </section>
             <Ofert/>
