@@ -4,12 +4,12 @@ export default function Home(){
     return( 
         <section className="flex flex-col justify-center items-center p-16 relative xl:h-[80vh] h-[60vh]"> 
             <h1 
-                className="z-10 flex flex-col justify-center items-center font-playfair text-4xl xl:text-6xl gap-4 text-white uppercase xl:mt-20 "
+                className="z-10 flex flex-col justify-center items-center font-raleway text-4xl xl:text-5xl gap-4 text-white uppercase xl:mt-20 "
                 aria-label="Elegí tu nuevo hogar Y viví la vida que mereces."
                 style={{ textShadow: '6px 3px 4px rgba(0,0,0,0.5)' }}
             >
                 Elegí tu nuevo hogar <br/>
-                <b>Y viví la vida que mereces.</b>
+                <b className="text-6xl font-playfair">Y <b className="lowercase"> viví la vida que mereces.</b></b>
             </h1> 
             <Image //la imagen 1271x628
                 priority={true}

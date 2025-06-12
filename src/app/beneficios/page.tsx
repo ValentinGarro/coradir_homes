@@ -23,8 +23,8 @@ export default function Page(){
                     <p className="font-raleway text-black w-full">
                         Hacé crecer tu inversión con seguridad, innovación y visión de futuro.
                     </p>
-                    <p className="font-raleway text-black w-full">
-                        <b>Invertí inteligente. Invertí con Coradir Homes.</b>
+                    <p className="font-raleway text-2xl xl:text-6xl text-center  text-black w-full">
+                        <b>Invertí inteligente.<br/> Invertí con Coradir Homes.</b>
                     </p>
                 </section>
                 <Carrucel />

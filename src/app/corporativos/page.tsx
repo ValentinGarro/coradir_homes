@@ -22,7 +22,7 @@ export default function Page(){
                     alt="Corporativos"
                     width={1000}
                     height={1000}
-                    className="w-[45%] h-[40%] xl:h-[50%] absolute z-10 top-[22%] right-0 rounded-4xl object-right-top"
+                    className="w-[45%] h-[67%] md:w-[35%] xl:h-[50%] absolute z-10 top-[20%] right-0 rounded-4xl object-right-top"
                 />
                 <div className="flex flex-col items-start justify-start gap-5 xl:py-20 py-5 w-full relative">
                 </div>
@@ -39,7 +39,7 @@ export default function Page(){
                                 height={100}
                                 className="xl:w-20 xl:h-20 w-10 h-10"
                             />
-                            <p className="text-black font-raleway xl:text-5xl w-[80%]">{benefit}</p>
+                            <p className="text-black font-raleway text-lg xl:text-5xl w-[80%]">{benefit}</p>
                         </div>
                     ))}
                 </div>
@@ -52,7 +52,7 @@ export default function Page(){
                     height={1000}
                     className="w-full xl:h-[80vh] h-[50vh] object-top"
                 />
-                <Link href="/" className="xl:text-3xl absolute xl:bottom-32 bottom-16 left-1/2 transform -translate-x-1/2 z-10 text-blue border-2 border-blue bg-white xl:px-24 xl:py-4 py-2 px-5 rounded-full uppercase">
+                <Link href="/" className="xl:text-5xl text-2xl absolute  bottom-1/2 translate-y-1/2 left-1/2 transform -translate-x-1/2 z-10 text-blue bg-white xl:px-24 xl:py-4 py-2 px-5 rounded-full uppercase">
                     ¡Saber más!
                 </Link>
             </section>

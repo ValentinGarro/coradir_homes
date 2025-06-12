@@ -41,9 +41,9 @@ export default function Instituciones() {
     ]
     return (
         <>
-            <section className="flex flex-col justify-center items-center p-16 relative h-[60vh] xl:h-[80vh]"> 
+            <section className="flex flex-col justify-end items-center p-16 relative h-[60vh] xl:h-[80vh]"> 
                 <h1 
-                    className="z-10 flex flex-col justify-center items-center font-playfair text-5xl xl:text-8xl gap-4 text-white uppercase xl:mt-20 "
+                    className="z-10 flex flex-col justify-center items-center font-playfair text-5xl xl:text-8xl gap-4 text-white l:mt-20 "
                     aria-label="Instituciones"
                     style={{ textShadow: '6px 3px 4px rgba(0,0,0,0.5)' }}
                 >

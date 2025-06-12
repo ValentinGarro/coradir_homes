@@ -8,7 +8,7 @@ export default function CardInvestment({img,title,description}: {img:string,titl
                 alt={title}
                 width={1000}
                 height={1000}
-                className="xl:w-44 xl:h-44 w-24 h-24 object-cover"
+                className="xl:w-56 xl:h-56 w-24 h-24 object-cover"
             />
             <div className="flex flex-col justify-center items-start w-full">
                 <h2 className="text-blue font-playfair text-xl xl:text-4xl font-bold">{title}</h2>

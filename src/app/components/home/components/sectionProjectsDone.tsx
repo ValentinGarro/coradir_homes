@@ -3,12 +3,12 @@ import CardProyect from "./cardProyect"
 export default function SectionProjectsDone(){
     const proyects = [
         {
-            title: "La Torre I",
+            title: "Torre Privada Coradir",
             image: "/img/proyectos_realizados_1.png",
             link: "/",
         },
         {
-            title: "La Torre II",
+            title: "La Torre II Coradir",
             image: "/img/proyectos_realizados_2.png",
             link: "/",
         },

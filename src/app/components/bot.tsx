@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Bot() {
     return (
-        <span className="fixed  bottom-1/4  right-10 xl:left-10 z-50 w-20 h-20 flex items-center justify-center">
+        <span className="fixed  bottom-28 xl:bottom-44  left-5 xl:left-10 z-50 w-14 h-14 xl:w-20 xl:h-20 flex items-center justify-center opacity-65 xl:opacity-100">
             {/* Auriolas animadas */}
             <motion.span
                 className="absolute w-20 h-20  rounded-full bg-blue/80"
@@ -17,7 +17,7 @@ export default function Bot() {
                 }}
             /> 
             {/* Botón principal */}
-            <span className="relative z-10 bg-blue/95 transition-all ease-in-out duration-200 hover:bg-blue w-20 h-20 rounded-full border-2 border-white cursor-pointer" >
+            <span className="relative z-10 bg-blue/95 transition-all ease-in-out duration-200 hover:bg-blue w-full h-full rounded-full border-2 border-white cursor-pointer" >
                 <Image
                     src="/img/chatbot.png"
                     alt="Chatbot"

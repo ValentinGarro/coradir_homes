@@ -2,25 +2,23 @@ import Image from "next/image";
 import CardChar from "./components/cardChar";
 export default function Page(){
     const characteristic = [
-        {title:"Tu tierra, tu inversión.",description:`En lugar de dejar tu terreno sin aprovechar, conviértelo 
-            en un desarrollo inmobiliario sin necesidad de inversión adicional.`},
-        {title:"Nostros construimos, vos ganás.", description:`Te aseguramos un prouuecto de alta calidad en tu terreno,
-            con diselos modernos y estrátegicos para maximizar la rentabilidad.`},
+        {title:"Tu tierra, tu inversión.",description:`Convertí tu terreno sin uso en un desarrollo inmobiliario sin
+necesidad de inversión adicional.`},
+        {title:"Nosotros construimos, vos ganás.", description:`Te aseguramos calidad, diseño estratégico y máxima rentabilidad.`},
         {title:"Ingresos grantizados.", description:`
-            Una vez finalizada la obra. recibirás unidades, con administración integral a cargo de CORADIR,
-            asegurando ocipación rapida y rentabilidad optima.`},
+            Recibís unidades listas para alquilar, con gestión completa
+y ocupación rápida.`},
         {title:"Modelo sin riesgos.", description:`
-            No necesitas preociparte por costos de construcción o gestión.
-            Te asocias con un equipo experto que convierte tu terreno en un acivo inmobiliario rentable.`},
+            Nos encargamos de todo: construcción, administración y rentabilidad.`},
         {title:"Rentabilidad asegurada.", description:`
-            Los alquileres de los departamentos generan ingresos mensuales recurrentes, aumentando tu patrimonio
-            sin esfuerzo.`}
+            Los alquileres de los departamentos generarán ingresos
+recurrentes, aumentando tu patrimonio sin esfuerzo.`}
     ]
     return(
         <>
-            <section className="flex flex-col justify-end items-center p-16 relative h-[50vh] xl:h-[70vh]"> 
+            <section className="flex flex-col justify-end items-center p-16 relative h-[30vh] xl:h-[70vh]"> 
                 <h1 
-                    className="z-10 flex flex-col justify-center items-center font-playfair text-6xl xl:text-8xl gap-4 text-white uppercase xl:mt-20 "
+                    className="z-10 flex flex-col justify-center items-center font-playfair text-7xl xl:text-8xl gap-4 text-white xl:mt-20 "
                     aria-label="Terrenos"
                     style={{ textShadow: '6px 3px 4px rgba(0,0,0,0.5)' }}
                 >
@@ -34,19 +32,19 @@ export default function Page(){
                     aria-label="Hero Pagina Principal"
                     width={2000} 
                     height={2000} 
-                    className="w-[100vw] h-[50vh] xl:h-[70vh]  object-top absolute top-0 left-0 "
+                    className="w-[100vw] h-[30vh] xl:h-[70vh] object-contain md:object-cover object-top absolute top-0 left-0 "
                 />
             </section>
             <section className="flex flex-col justify-start items-center container p-10 xl:p-16 bg-white">
                 <h2 className="text-blue font-playfair text-3xl xl:text-7xl font-bold">¿Tenés un terreno?</h2>
                 <h2 className="text-black font-raleway text-2xl xl:text-7xl uppercase">Convertilo en ingresos</h2>
-                <p className="text-black font-raleway text-xl xl:text-4xl text-center my-10">
-                    Sumate a nuestro sistema aportando tu terreno<br/>
-                    y recibis propiedades listas para alquilar.<br/>
+                <p className="text-black text-center font-raleway text-xl xl:text-4xl  my-10">
+                    Sumate a nuestro sistema aportando tu terreno<br className="hidden xl:block"/>
+                    y recibis propiedades listas para alquilar.<br className="hidden xl:block"/>
                     Fácil, rentable y sin necesidad de invertir capital.  
                 </p> 
             </section>  
-            <section className="flex flex-col items-center justify-center w-full max-w-[2000px] mx-auto xl:container relative xl:px-56 py-10 pt-0 gap-4 xl:pb-26">
+            <section className="flex flex-col items-center justify-center w-full max-w-[2000px] mx-auto xl:container relative xl:px-56 py-10 pt-0 gap-8 xl:pb-26">
                 {
                     characteristic.map((characteristic,index) => (
                         <CardChar 
