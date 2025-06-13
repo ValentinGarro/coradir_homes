@@ -46,6 +46,10 @@ recurrentes, aumentando tu patrimonio sin esfuerzo.`}
                 </p> 
             </section>  
             <section className="flex flex-col items-center justify-center w-full max-w-[2000px] mx-auto xl:container relative xl:px-56 py-10 pt-0 gap-8 xl:pb-26">
+                <ButtonContact 
+                    href="/saber-mas/terrenos"
+                    className="bg-blue  text-white mb-16"
+                />
                 {
                     characteristic.map((characteristic,index) => (
                         <CardChar 
@@ -57,10 +61,7 @@ recurrentes, aumentando tu patrimonio sin esfuerzo.`}
                         />
                     ))
                 }
-                <ButtonContact 
-                    href="/saber-mas/terrenos"
-                    className="bg-blue  text-white"
-                />
+                
             </section>
         </>
     );
