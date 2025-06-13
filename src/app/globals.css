@@ -91,3 +91,18 @@
   opacity: 1;
 }
  
+/* Formulario */
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--color-blue) inset !important; /* tu color de fondo (ejemplo: bg-blue-800) */
+  box-shadow: 0 0 0 1000px var(--color-blue) inset !important;
+  -webkit-text-fill-color: white !important; /* tu color de texto */
+  background-color: var(--color-blue) !important; 
+}
+
+input:focus:-webkit-autofill,
+textarea:focus:-webkit-autofill { 
+  outline: none !important;
+}
+ 

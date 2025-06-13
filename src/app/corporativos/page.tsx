@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ButtonContact from "../components/buttonContact";
 export const metadata = {
     title: "Corporativos",
     description: "Corporativos",
@@ -51,10 +52,11 @@ export default function Page(){
                     width={1000}
                     height={1000}
                     className="w-full xl:h-[80vh] h-[50vh] object-top"
+                /> 
+                <ButtonContact 
+                    href="/saber-mas/corporativos"
+                    className="absolute bottom-10 xl:bottom-32  left-1/2 transform -translate-x-1/2  text-blue  bg-white"
                 />
-                <Link href="/" className="xl:text-5xl text-2xl absolute  bottom-1/2 translate-y-1/2 left-1/2 transform -translate-x-1/2 z-10 text-blue bg-white xl:px-24 xl:py-4 py-2 px-5 rounded-full uppercase">
-                    ¡Saber más!
-                </Link>
             </section>
         </>
     )

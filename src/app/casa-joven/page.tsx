@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CardChar from "../terrenos/components/cardChar";
 import Link from "next/link";
+import ButtonContact from "../components/buttonContact";
 
 export const metadata = {
     title: "Casa Joven",
@@ -74,11 +75,11 @@ export default function CasaJoven() {
                     <div className="flex flex-col items-center justify-center w-[80%] gap-8">
                         <p className="text-black text-center font-raleway text-xl xl:text-5xl w-full font-bold  xl:w-[70%]">
                             Vivir bien nunca fue tan sencillo. Conectá con nosotros y encontrá el hogar que se adapta a vos.
-                        </p>
-                        <Link href="/" className="xl:text-3xl text-2xl xl:bottom-32  z-10 text-white bg-blue xl:px-24 xl:py-4 py-2 px-5 rounded-full uppercase">
-                        ¡Saber más!
-                        </Link>
-                        
+                        </p> 
+                        <ButtonContact 
+                            href="/saber-mas/casa-joven"
+                            className="absolute bottom-10 xl:bottom-32  left-1/2 transform -translate-x-1/2 z-10 text-blue  bg-white"
+                        />
                     </div>
                     <Image
                             src="/img/casa_joven_3.png"

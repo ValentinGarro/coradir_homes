@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import ButtonContact from "../../buttonContact";
 export default function SectionInvestments(){
     return(
         <section className="w-full xl:w-[80%] flex flex-col xl:flex-row items-center justify-center gap-10">
@@ -11,13 +11,11 @@ export default function SectionInvestments(){
                 <p className="text-lg xl:text-xl font-raleway text-black">
                     <b>Invertí con seguridad,</b> incluso sin experiencia previa,
                     y sé parte activa del desarrollo inmobiliario.
-                </p>
-                <Link 
-                    href="/"
-                    className="text-center w-full xl:text-xl font-raleway bg-blue uppercase text-white py-2 rounded-full"
-                > 
-                    ¡Saber mas!
-                </Link>
+                </p> 
+                <ButtonContact 
+                    href="/saber-mas/inversiones"
+                    className="!text-lg bg-blue text-white"
+                />
             </div>
         </section>
     )

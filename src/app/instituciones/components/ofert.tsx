@@ -1,3 +1,4 @@
+import ButtonContact from "@/app/components/buttonContact";
 import Link from "next/link";
 
 export default function Ofert(){
@@ -10,10 +11,11 @@ export default function Ofert(){
             accesibles para instituciones educativas, mediante <br/>
             financiamiento colectivo y el uso de terrenos disponibles, <br/>
             con construcciones tecnológicas y seguras.
-        </p>
-        <Link href="/" className="text-xl xl:text-3xl border-2 bg-blue text-white px-10 py-2 xl:px-24 xl:py-4 rounded-full uppercase">
-            ¡Saber más!
-        </Link>
+        </p> 
+        <ButtonContact 
+            href="/saber-mas/instituciones"
+            className="bg-blue  text-white"
+        />
     </section>  
     );
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import CardInvestment from "../components/cardInvestment";
-import Link from "next/link";
+import ButtonContact from "../components/buttonContact";
 export const metadata = {
     title: "Inversiones Inteligentes",
     description: "Invertí de manera inteligente y obtené retornos rápidos y seguros.",
@@ -48,10 +48,11 @@ export default function Investments(){
                     width={1000}
                     height={1000}
                     className="w-full xl:h-[80vh] h-[40vh] object-top"
+                /> 
+                <ButtonContact 
+                    href="/saber-mas/inversiones"
+                    className="absolute bottom-10 xl:bottom-32  left-1/2 transform -translate-x-1/2  text-blue  bg-white"
                 />
-                <Link href="/" className="xl:text-3xl text-xl absolute bottom-10 xl:bottom-32  left-1/2 transform -translate-x-1/2 z-10 text-blue  bg-white xl:px-24 px-10 py-2 xl:py-4 rounded-full uppercase">
-                    ¡Saber más!
-                </Link>
             </section>
         </>
     )
