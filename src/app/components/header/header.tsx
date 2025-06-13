@@ -4,6 +4,7 @@ import Link from "next/link";
 import HoverLink from "./components/hover-link";
 import { useMediaQuery } from "../../../hooks/useMediaQuery";
 import MobileMenu from "./components/mobileMenu";
+import { useState } from "react";
 
 export const links = [
     { href: "#", label: <>Proyectos de <br/> inversión </> , hover: [
@@ -19,10 +20,11 @@ export const links = [
     { href: "/", label: <>Sobre <br/> nosotros</> , hover:null},
 ];
 export default function Header() {
+    const [open, setOpen] = useState(false);
     const isMobile = useMediaQuery("(max-width: 768px)");
     return (
         <header className="relative flex md:flex-col xl:flex-row justify-between md:justify-start items-center md:px-10 px-2 bg-blue w-full h-auto xl:max-h-[20vh] container"> 
-            <Link href="/" className="z-100 xl:h-30 h-20 xl:my-20 my-5 flex items-center justify-center overflow-hidden">
+            <Link onClick={() => setOpen(false)} href="/" className="z-100 xl:h-30 h-20 xl:my-20 my-5 flex items-center justify-center overflow-hidden">
                 <Image 
                     priority={true}
                     loading="eager"
@@ -51,7 +53,7 @@ export default function Header() {
                 </div>
             </div>
             {isMobile && (
-                <MobileMenu />
+                <MobileMenu open={open} setOpen={setOpen}/>
              )}   
         </header>
     );

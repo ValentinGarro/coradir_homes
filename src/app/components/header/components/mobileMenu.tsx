@@ -3,8 +3,7 @@ import { links } from "../header";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function MobileMenu(){
-    const [open, setOpen] = useState(false);
+export default function MobileMenu({open,setOpen}: {open: boolean,setOpen: (open: boolean) => void}){
     const [openHover, setOpenHover] = useState<number | null>(null);
     const hoverTimeout = useRef<NodeJS.Timeout | null>(null);
 

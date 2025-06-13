@@ -10,14 +10,14 @@ export const metadata = {
 export default function CasaJoven() {
     return (
         <>
-            <section className="relative container flex flex-col items-center justify-start gap-5 min-h-[100vh]">
+            <section className="relative container flex flex-col items-center justify-start gap-5 min-h-[100vh]  xl:pb-0 py-5">
                 <h1 className="text-blue font-playfair text-6xl xl:text-8xl font-bold xl:mb-10 mb-5">Casa Jóven</h1>
                 <div 
                 className={`flex flex-col items-center justify-center text-white py-4 px-5 text-center  gap-2 
                 bg-blue-gray rounded-full rounded-tr-none w-[90%] xl:w-[50%] xl:px-20 `}> 
                     <p className=" font-raleway text-lg xl:text-3xl ">Acceder a tu primer departamento nunca fue tan fácil, rápido y accesible.</p> 
                 </div> 
-                <section className="relative xl:px-16 px-4 w-full xl:pt-8 pt-2 flex flex-col items-center justify-center gap-6">
+                <section className="relative xl:px-16 px-4 w-full xl:pt-8 pt-2 flex flex-col items-center justify-center gap-6  xl:mb-10">
                     <p className=" text-center text-black text-lg font-raleway xl:text-3xl w-[90%] xl:w-[50%]">
                         Tu nuevo comienzo empieza en Coradir Homes. 
                         Viviendas modernas, seguras y accesibles,
@@ -31,11 +31,11 @@ export default function CasaJoven() {
                         alt="Casa Joven"
                         width={1000}
                         height={1000}
-                        className="xl:w-72 xl:h-72 w-56 h-56   z-10 -top-4 right-0 rounded-full"
+                        className="xl:w-72 xl:h-72 w-56 h-56  z-10 xl:absolute xl:-top-4 xl:right-0 rounded-full"
                     /> 
                     
                 </section>
-                <section className="relative xl:px-16 px-4 w-full   flex flex-col items-center justify-center gap-6">
+                <section className="relative xl:px-16 px-4 w-full   flex flex-col items-center justify-center gap-6 xl:mb-10">
                     <p className="text-center text-black font-raleway xl:text-3xl xl:w-[50%]">
                         <b>Confort total desde el primer día:</b><br/>
                         Sin preocuparte por mantenimiento ni estructura.
@@ -57,13 +57,22 @@ export default function CasaJoven() {
                         alt="Casa Joven"
                         width={1000}
                         height={1000}
-                        className="xl:w-72 xl:h-72 w-56 h-56  rounded-full"
+                        className="xl:w-72 xl:h-72 w-56 h-56 xl:absolute xl:-top-4 xl:left-0  rounded-full"
                     />
                 </section>
-                <section className="relative flex flex-col items-center xl:items-center justify-center   xl:gap-10 xl:w-[80%] px-5   xl:pr-0 overflow-hidden xl:py-20">
-                    <div
+                <section className="relative flex flex-col items-center xl:items-center justify-center xl:gap-10 xl:w-[80%] px-5 xl:pr-0 xl:py-20">
+                    
+                    <div className="relative flex flex-col items-center justify-center gap-8 sm:w-[70%] xl:w-full py-10">
+                        <p className="text-black text-center font-raleway text-xl xl:text-5xl  font-bold  xl:w-[70%]">
+                            Vivir bien nunca fue tan sencillo. Conectá con nosotros y encontrá el hogar que se adapta a vos.
+                        </p> 
+                        <ButtonContact 
+                            href="/saber-mas/casa-joven"
+                            className="!text-lg z-10 bg-blue text-white"
+                        />
+                        <div
                         aria-hidden="true"
-                        className="absolute xl:-left-32 -left-24 -bottom-8 w-full h-full pointer-events-none z-0"
+                        className="absolute xl:-left-32 -left-12 xl:-bottom-20 -bottom-0 w-full h-full  xl:h-96 pointer-events-none z-0"
                         style={{
                             backgroundImage: "url('/img/torre.png')",
                             backgroundRepeat: "no-repeat",
@@ -72,21 +81,13 @@ export default function CasaJoven() {
                             
                         }}
                     />
-                    <div className="flex flex-col items-center justify-center w-[80%] gap-8">
-                        <p className="text-black text-center font-raleway text-xl xl:text-5xl w-full font-bold  xl:w-[70%]">
-                            Vivir bien nunca fue tan sencillo. Conectá con nosotros y encontrá el hogar que se adapta a vos.
-                        </p> 
-                        <ButtonContact 
-                            href="/saber-mas/casa-joven"
-                            className="absolute bottom-10 xl:bottom-32  left-1/2 transform -translate-x-1/2 z-10 text-blue  bg-white"
-                        />
                     </div>
                     <Image
                             src="/img/casa_joven_3.png"
                             alt="Casa Joven"
                             width={1000}
                             height={1000}
-                            className="xl:w-96 xl:h-96 w-56 h-56 z-10  rounded-full my-8"
+                            className="xl:w-96 xl:h-96 w-56 h-56 z-10 xl:absolute xl:-top-30 xl:-right-40 rounded-full my-8"
                         />
                 </section>
             </section>
