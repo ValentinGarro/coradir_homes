@@ -1,4 +1,4 @@
-import SaberMas from "./components/saberMas";
+import ReCaptcha from "./components/reCaptcha"; 
  
 export const metadata = {
     title: "Saber más",
@@ -6,6 +6,6 @@ export const metadata = {
 }
 export default function Page(){ 
     return(
-        <SaberMas/>
+        <ReCaptcha/>
     );
 }

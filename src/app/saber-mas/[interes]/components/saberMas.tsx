@@ -4,10 +4,11 @@ import { FormSchema, InputForm, Interests } from "./formSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import CustomInput from "./customInput";
 import { useEffect, useRef, useState } from "react";
-import { useParams } from "next/navigation"; 
+import { useParams } from "next/navigation";  
+import { GoogleReCaptchaProvider, useGoogleReCaptcha } from "react-google-recaptcha-v3";
 export default function SaberMas(){
     const {interes} = useParams() ;
-    const interesResult = Interests.safeParse(interes);
+    const interesResult = Interests.safeParse(interes); 
     if(!interes || !interesResult.success) return <div>Interes no encontrado</div>;
     const form = useForm<FormSchema>({
         mode: "onChange",
@@ -23,13 +24,31 @@ export default function SaberMas(){
     const { handleSubmit, control , formState:{ errors, isSubmitting }, reset } = form; 
     const [submitMessage, setSubmitMessage] = useState({ type: ' ',
         text: ' ' });
-    const onSubmit = async (data:FormSchema) => {
-        console.log(data); 
-        setSubmitMessage({
-            type: 'success',
-            text: '¡Gracias por tu interés! Hemos recibido tu solicitud y te contactaremos pronto.',
-        });
-        return; 
+    const {executeRecaptcha} = useGoogleReCaptcha();
+    const onSubmit = async (data:FormSchema) => { 
+        try{
+            if (!executeRecaptcha) throw new Error('Debes completar el captcha.');
+            console.log("hola")
+            const token = await executeRecaptcha('form_submit');
+            const verifyCaptcha = await fetch('/api/verify-captcha', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ token }),
+            });
+            const verifyCaptchaJson = await verifyCaptcha.json();
+            if (!verifyCaptchaJson.ok) throw new Error('Error al verificar el captcha.'); 
+
+        }catch(error : any){
+            console.log(error)
+            setSubmitMessage({
+                type: 'error',
+                text: error.message,
+            });
+            return;
+        }
+       
         const dataToSend = {
             name: data.name.trim(),
             email: data.email.trim().toLowerCase(),
@@ -55,8 +74,7 @@ export default function SaberMas(){
                 type: 'success',
                 text: '¡Gracias por tu interés! Hemos recibido tu solicitud y te contactaremos pronto.',
             });
-        } catch (error) {
-            console.error('Error al enviar datos a n8n:', error);
+        } catch (error) { 
             setSubmitMessage({
                 type: 'error',
                 text: 'Hubo un error al enviar tu solicitud. Por favor, intenta nuevamente.',
@@ -95,8 +113,8 @@ export default function SaberMas(){
           })
         }
     }, [errors ]);
-   
-    return(
+    
+    return( 
         <section className="container flex flex-col items-center justify-start py-10 pt-14 min-h-[73vh] gap-5"> 
             <h1 className="text-center text-7xl md:text-8xl text-blue font-playfair">¡Hola!</h1>   
             <h2 className="w-[80%] md:w-[35%] text-gray md:text-xl font-raleway text-center">Por favor, completa el siguiente formulario para que podamos conocer mejor tus intereses y asesorarte.</h2> 
@@ -120,7 +138,7 @@ export default function SaberMas(){
                                 control={control} 
                                 errors={errors}  
                             />
-                        ))}
+                        ))}  
                         <button 
                             type="submit" 
                             disabled={isSubmitting || Object.keys(errors).length > 0}
@@ -129,9 +147,10 @@ export default function SaberMas(){
                                 opacity: isSubmitting || Object.keys(errors).length > 0 ? 0.7 : 1,
                                 cursor: isSubmitting || Object.keys(errors).length > 0 ? 'not-allowed' : 'pointer'
                             }}
-                            >
-                                {isSubmitting ? "Enviando..." : "Enviar"}
-                            </button>
+                        >
+                            {isSubmitting ? "Enviando..." : "Enviar"}
+                        </button>  
+                        
                     </form>
                 )}
         </section>  
